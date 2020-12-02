@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+        desc{
+            margin-top: 5vw;
+        }
+        #input{
+            width: 60vw;
+            height: 30vh;
+        }
+        #submit{
+            width: 10vw;
+        }
+
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mandarin Quizlet Cross-Generator</title>
+</head>
+<body>
+    <!-- maybe it would be better to have two input text boxes?-->
+    <p id = "desc">key in characters, value in english (example: 你好&emsp;hello) then continuing on a new line.
+        <br>(use TAB to separate key and value, if this is not convenient feel free to email me and i can help) </p>
+    <textarea id="input" placeholder="example: &#10;你好，hello&#10;星期, week"></textarea>
+    <input id ="submit" tabindex="-1" value = "Submit" type="button">
+
+    <textarea id="test_output"></textarea>
+</body>
+<script src = "bundle.js"></script>
+</html>
